@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space TD - registration</title>
+    <link rel="stylesheet" href="./register_page_2.css">
+</head>
+<body>
+
+    <nav>
+        <img src="./spacetd-logo-01.png" class="logo">
+        <ul>
+
+            <li><a href="./homepage_spacetd.html">homepage</a></li>
+            <li><a href="./eagle_1_vehc.html" class="dropdown-toggle">vehicles</a>
+                <ul class="dropdown-menu">
+                    <li><a href="./eagle_1_vehc.html">eagle 1</a></li>
+                    <li><a href="./eagle_5_page.html">eagle 5</a></li>
+                </ul>
+            </li>
+            <li><a href="./programs_spacex.html">programs</a></li>
+            <li><a href="./space_td_countdown.html">launches</a></li>
+            <li><a href="./register_page.html">register</a></li>
+
+        </ul>
+    </nav>
+
+    <section class="wrapper">
+        <h1 class="title">registration</h1>
+        <form action="#">
+
+            <div class="user-details">
+
+                <div class="input-box">
+                    <span class="details">full name</span>
+                    <input type="text" id="name" placeholder="Please Enter your Full Name" onkeyup="validateName()" required>
+                    <span id="name-lol"></span>
+                </div>
+
+                <div class="input-box">
+                    <span class="details">country</span>
+                    <input type="text" id="coutry" placeholder="Please Enter your Country" onkeyup="validateCountry()" required>
+                    <span id="country-lol"></span>
+                </div>
+
+                <div class="input-box">
+                    <span class="details">email</span>
+                    <input type="email" id="email" placeholder="Please Enter your Email" onkeyup="validateEmail()" required>
+                    <span id="email-lol"></span>
+                </div>
+
+                <div class="input-box">
+                    <span class="details">phone number</span>
+                    <input type="text" id="number" placeholder="Please Enter your Phone Number" onkeyup="validateNumber()" required>
+                    <span id="number-lol"></span>
+                </div>
+
+                <div class="input-box">
+                    <span class="details">password</span>
+                    <input type="password" id="password" placeholder="Please Enter your Password" onkeyup="validatePassword()" required>
+                    <span id="password-lol"></span>
+                </div>
+
+                <div class="input-box">
+                    <span class="details">confirm password</span>
+                    <input type="password" id="conf-password" placeholder="Confirm Your password" required>
+                    <span id="confpassword-lol"></span>
+                </div>
+
+                <div class="input-box">
+                    <span class="details">date of birth</span>
+                    <input type="date" id="dob"  required>
+                </div>
+
+                <!-- Gender -->
+                <div class="gender-details">
+
+                    <input type="radio" name="gender" id="circle-1">
+                    <input type="radio" name="gender" id="circle-2">
+                    <input type="radio" name="gender" id="circle-3">
+                    <span class="gender">Gender</span>
+                    <div class="category">
+
+                        <label for="circle-1">
+                            <span class="circle one"></span>
+                            <span class="gender">Male</span>
+                        </label>
+
+                        <label for="circle-2">
+                            <span class="circle two"></span>
+                            <span class="gender">Female</span>
+                        </label>
+
+                        <label for="circle-3">
+                            <span class="circle three"></span>
+                            <span class="gender">Other</span>
+                        </label>
+
+                    </div>
+                </div>
+
+                <div class="input-box-1">
+                    <input type="checkbox" id="tick" />
+                    <label for="tick"><span>Agree to terms and conditions</span></label>
+                    <span id="check-lol"></span>
+                  </div>
+
+                <div class="button">
+                    <input type="submit" value="register" >
+                </div>
+
+            </div>
+        </form>
+    </section>
+    <script src="./regist.js"></script>
+</body>
+</html>

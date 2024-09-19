@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins",sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url(./images/spacex-2.jpg);
+}
+
+nav{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding : 20px 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav .logo{
+    width: 250px;
+}
+
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 40px;
+    align-items: center;
+    left: 70%;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 17px;
+    left: 50%;
+}
+
+.wrapper{
+    max-width: 700px;
+    width: 100%;
+    background: #fff;
+    padding: 25px 30px;
+    border-radius: 5px;
+}
+
+.wrapper .title{
+    font-size: 25px;
+    font-weight: 500;
+    position: relative;
+}
+.wrapper .title::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 40px;
+}
+
+.wrapper form .user-details{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px 0 12px 0;
+}
+form .user-details .input-box{
+    margin-bottom: 15px;
+    width: calc(100% / 2 - 20px);
+}
+.user-details .input-box input{
+    height: 45px;
+    width: 100%;
+}
+.user-details .input-box .details{
+    font-weight: 500;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.user-details .input-box input{
+    height: 45px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding-left: 15px;
+    font-size: 16px;
+    border-bottom-width: 2px;
+    transition: all .3s ease;
+}
+.user-details .input-box input:focus,
+.user-details .input-box input:valid{
+    border-color: #FC3D21;
+}
+
+form .gender-details .gender-title{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.gender-details .category{
+    display: flex;
+    width: 80%;
+    margin: 14px 0;
+    justify-content: space-between;
+}
+.gender-details .category label{
+    display: flex;
+    align-items: center;
+}
+.gender-details .category .circle{
+    height: 18px;
+    width: 18px;
+    border-radius: 50%;
+    margin-right: 10px;
+    background: #D9D9D9;
+    border: 5px solid transparent;
+}
+
+#circle-1:checked ~ .category label .one,
+#cirlce-2:checked ~ .category label .two,
+#circle-3:checked ~ .category label .three{
+    
+    border-color: #4942E4;
+}
+
+form input[type="radio"]{
+    display: none;
+}
+
+form .button{
+
+    padding-left: 20px;
+    height: 45px;
+    width: 40%;
+    margin: 20px 0;
+}
+
+form .button input{
+    height: 100%;
+    width: 100%;
+    color: #4942E4;
+    outline: none;
+    border: none;
+    font-size: 15px;
+    font-weight: 300;
+    cursor: pointer;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    /* background: white; */
+}
+form .button input:hover{
+    /* background:white; */
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    padding: 10px;
+  }
+  
+  .dropdown-toggle:hover + .dropdown-menu,
+  .dropdown-menu:hover {
+    display: block;
+  }
+  
+  .dropdown-menu li {
+    list-style-type: none;
+    margin-bottom: 5px;
+  }
+  
+  .dropdown-menu li a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  .dropdown-menu li a:hover {
+    color: #f00; 
+  }
+  
+  .dropdown {
+    display: inline-block;
+    position: relative;
+  }
+  
+  .dropdown-toggle::after {
+    content: "\25BE"; 
+    margin-left: 5px;
+  }
+  
+  .dropdown-menu {
+    top: calc(50% + 5px); 
+    left: 880px;
+  }
+  
+  .dropdown:hover .dropdown-menu {
+    display: block;
+  }
+
+  .tick-button label span {
+    margin-left: 5px;
+    color: #333;
+    font-weight: normal;
+  }
+  
+  .tick-button input[type="checkbox"]:checked + label span {
+    width: 50px;
+    height: 20px;
+    color: black;
+    font-weight: bold;
+  }
+  
+
+  .tick-button {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .tick-button input[type="checkbox"] {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  }
+  
+  .tick label {
+    display: inline-block;
+    width: 70px;
+    height: 50px;
+    left: 200px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    color: black;
+  }
+  
+  .tick-button {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    top: 85px;
+    left: -270px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    color: black;
+  }
+  
+  .tick-button label:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  .tick-button input[type="checkbox"]:checked + label:after {
+    display: block;
+    width: 8px;
+    height: 15px;
+    border: solid #000;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+    left: 5px;
+    top: 2px;
+  }
+
+.input-box-1{
+
+}
+
+@media (max-width: 768px) {
+.wrapper{
+    max-width: 100%;
+}
+form .user-details .input-box{
+    margin-bottom: 15px;
+    width: 100%;
+}
+.gender-details .category{
+    width: 100%;
+}
+.wrapper form .user-details{
+    max-height: 300px;
+    overflow-y: scroll;
+}
+.user-details::-webkit-scrollbar{
+    width: 0;
+}
+
+}

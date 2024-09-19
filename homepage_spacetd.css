@@ -1,0 +1,397 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,600&family=Poppins:wght@100;400;500&display=swap");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.hero{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    padding: 0 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 20px 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav .logo{
+    width: 250px;
+}
+
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 40px;
+    align-items: center;
+    left: 70%;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 17px;
+    left: 50%;
+}
+
+.background-video{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+@media (min-aspect-ratio: 16/9){
+    .background-video{
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-aspect-ratio: 16/9){
+    .background-video{
+        width: auto;
+        height: 100%;
+    }
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+}
+
+.big-word{
+    position: absolute;
+    width: 441px;
+    height: 64px;
+    left: 151px;
+    top: 250px;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 64px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.word-smallword{
+    position: absolute;
+    width: 300px;
+    height: 81px;
+    left: 155px;
+    top: 340px;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 100;
+    font-size: 10px;
+    line-height: 27px;
+    color: #FFFFFF; 
+}
+
+.card1{
+    width: 50px;
+    height: 230px;
+    left: 10000cm;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 10px 15px;
+    background-position: center;
+}
+
+.card2{
+    width: 100px;
+    height: 230px;
+    left: 100000px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 10px 15px;
+    background-position: center;
+}
+
+.box-1{
+    position: absolute;
+    width: 300px;
+    height: 81px;
+    left: 155px;
+    bottom: 140px;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 100px;
+    font-size: 20px;
+    line-height: 27px;
+    color: #FFFFFF; 
+}
+
+.box-2{
+    position: absolute;
+    width: 300px;
+    height: 81px;
+    left: 602px;
+    bottom: 140px;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 100px;
+    font-size: 20px;
+    line-height: 27px;
+    color: #FFFFFF; 
+}
+
+.title {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.description {
+    font-size: 16px;
+    text-align: left;
+}
+
+.pad{
+    left: 1000px;
+}
+
+.launched{
+    position: absolute;
+    width: 441px;
+    height: 64px;
+    top: 200px;
+    font-family: "Roboto";
+    font-weight: 100;
+    font-style: normal;
+    color: #FFFFFF;
+}
+
+.landings{
+    position: absolute;
+    width: 441px;
+    height: 64px;
+    top: 400px;
+    font-family: "Roboto";
+    font-weight: 100;
+    font-style: normal;
+    color:#FFFFFF;
+}
+
+.relaunched{
+    position: absolute;
+    width: 441px;
+    height: 64px;
+    top: 600px;
+    font-family: "Roboto";
+    font-weight: 100;
+    font-style: normal;
+    color: #FFFFFF;
+}
+
+.launched-angka{
+    position: absolute;
+    width: 441px;
+    height: 64px;
+    top: 120px;
+    font-family: "Roboto";
+    font-size: 30px;
+    font-weight: 100;
+    font-style: normal;
+    color: #FC3D21;
+}
+
+.landings-angka{
+    position: absolute;
+    width: 441px;
+    height: 64px;
+    top: 330px;
+    font-family: "Roboto";
+    font-size: 30px;
+    font-weight: 100;
+    font-style: normal;
+    color: #FC3D21;
+}
+
+.relaunched-angka{
+    position: absolute;
+    width: 441px;
+    height: 64px;
+    top: 540px;
+    font-family: "Roboto";
+    font-size: 30px;
+    font-weight: 100;
+    font-style: normal;
+    color: #FC3D21;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    padding: 10px;
+}
+
+.dropdown-toggle:hover + .dropdown-menu,
+.dropdown-menu:hover {
+    display: block;
+}
+
+.dropdown-menu li {
+    list-style-type: none;
+    margin-bottom: 5px;
+}
+
+.dropdown-menu li a {
+    text-decoration: none;
+    color: white;
+}
+
+.dropdown-menu li a:hover {
+    color: #f00; 
+}
+
+.dropdown {
+    display: inline-block;
+    position: relative;
+}
+
+.dropdown-toggle::after {
+    content: "\25BE"; 
+    margin-left: 5px;
+}
+
+.dropdown-menu {
+    top: calc(50% + 5px); 
+    left: 880px;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+@media (max-width: 768px) {
+nav ul {
+    display: none;
+    position: absolute;
+    top: 55px;
+    left: 0;
+    width: 100%;
+    background-color: #422600;
+    z-index: 1;
+}
+
+nav ul li {
+    width: 100%;
+    margin: 0;
+}
+
+nav ul li a {
+    padding: 10px 0;
+    color: #fff;
+}
+
+nav .menu-icon {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+nav .menu-icon:hover {
+    color: orange;
+}
+
+nav .active {
+    display: block;
+}
+
+.hero{
+    padding: 0 2%;
+}
+
+.big-word{
+    width: 90%;
+    font-size: 30px;
+    line-height: 50px;
+    text-align: center;
+    left: -18%;
+    top: 150px;
+}
+
+.word-smallword{
+    width: 90%;
+    font-size: 10px;
+    line-height: 20px;
+    text-align: left;
+    left: 5%;
+    top: 250px;
+}
+
+.card1,
+.card2{
+    width: 90%;
+    height: 200px;
+}
+
+.container{
+    padding: 0 2%;
+}
+
+.box-1{
+    width: 60%;
+    height: 150px;
+    left: 5%;
+    bottom: 100px;
+}
+
+.box-2{
+    width: 60%;
+    height: 150px;
+    left: 5%;
+    bottom: 220px;
+}
+
+.launched,
+.landings,
+.relaunched{
+    width: 90%;
+    left: 35%;
+    font-size: 10px;
+    line-height: 30px;
+    text-align: center;
+}
+
+.launched-angka,
+.landings-angka,
+.relaunched-angka{
+    height: 90px;
+    bottom: 10px;
+    left: 35%;
+
+    font-size: 35px;
+    line-height: 30px;
+    text-align: center;
+    }
+}
